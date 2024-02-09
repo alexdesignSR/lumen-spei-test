@@ -1,0 +1,32 @@
+.partners {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    &::before {
+        position: absolute;
+        content: '';
+        left: 0;
+        right: 0;
+        height: 1px;
+        top: 0;
+        mix-blend-mode: soft-light;
+        background-color: rgba($white, 0.2);
+    }
+    &::after {
+        position: absolute;
+        content: '';
+        left: 0;
+        right: 0;
+        height: 1px;
+        bottom: 0;
+        mix-blend-mode: soft-light;
+        background-color: rgba($white, 0.2);
+    }
+}
+
+.partners-inner {
+    height: 151px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}

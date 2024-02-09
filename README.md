@@ -1,1 +1,1 @@
-# lumen-spei-test
+# Test task for a position of Mid/Senior WordPress/FrontEnd developer

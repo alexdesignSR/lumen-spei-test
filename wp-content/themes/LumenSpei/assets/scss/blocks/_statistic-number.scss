@@ -1,0 +1,36 @@
+.statistic-number {
+    width: 100%;
+    padding: 100px 0 87px;
+}
+
+.statistic-number-inner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.statistic-box-number {
+    font-size: 64px;
+    line-height: 74px;
+    font-weight: 600;
+    font-family: $secondary-font;
+    color: transparent;
+    -webkit-text-stroke: 1px rgba($white, 0.5);
+    &::after {
+        content: '+';
+        font-family: $secondary-font;
+        font-weight: 600;
+        color: $secondary-color;
+        -webkit-text-stroke: 0;
+        font-size: 48px;
+        display: inline-block;
+        margin-left: 7px;
+        transform: translateY(-30px);
+        opacity: 1;
+    }
+}
+
+.statistic-box-text {
+    margin: 2px 0 0;
+    line-height: 26px;
+}
