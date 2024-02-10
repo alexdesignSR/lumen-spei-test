@@ -62,6 +62,7 @@
         transition: 0.4s ease;
         @include max-mq($md) {
             height: 2px;
+            background-color: $secondary-color;
         }
         &:nth-child(1) {
             top: 0;

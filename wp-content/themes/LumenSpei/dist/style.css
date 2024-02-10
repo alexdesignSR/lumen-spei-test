@@ -523,6 +523,7 @@ img {
 @media (max-width: 991px) {
   .menu-toggle span {
     height: 2px;
+    background-color: #FF6931;
   }
 }
 .menu-toggle span:nth-child(1) {
