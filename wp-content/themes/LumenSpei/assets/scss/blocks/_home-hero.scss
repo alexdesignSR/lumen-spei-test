@@ -1,5 +1,14 @@
 .home-hero {
     padding: 20px 0;
+    @include max-mq($ls) {
+        padding: 40px 0 80px;
+    }
+    @include max-mq($md) {
+        padding: 110px 0 80px;
+    }
+    @include max-mq($mb) {
+        padding-bottom: 40px;
+    }
 }
 
 .home-hero-inner {
@@ -14,6 +23,23 @@
     line-height: 90px;
     margin: 0;
     font-weight: 600;
+    @include max-mq($ls) {
+        font-size: 60px;
+        line-height: 70px;
+    }
+    @include max-mq(1024px) {
+        font-size: 50px;
+        line-height: 60px;
+    }
+    @include max-mq($md) {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    @include max-mq($sm) {
+        font-size: 36px;
+        line-height: 46px;
+    }
     p {
         margin: 0;
     }
@@ -31,6 +57,28 @@
         border-radius: 50px;
         top: 37px;
         left: calc(100% + 34px);
+        @include max-mq($ls) {
+            width: 120px;
+            height: 50px;
+            top: 25px;
+        }
+        @include max-mq(1024px) {
+            width: 100px;
+            height: 46px;
+            top: 20px;
+        }
+        @include max-mq($md) {
+            position: relative;
+            top: initial;
+            left: initial;
+            display: inline-block;
+            margin-left: 20px;
+            transform: translateY(5px);
+        }
+        @include max-mq($sm) {
+            width: 70px;
+            height: 36px;
+        }
         &::before {
             position: absolute;
             content: '';
@@ -41,6 +89,19 @@
             top: 50%;
             right: 7px;
             transform: translateY(-50%);
+            @include max-mq($ls) {
+                width: 36px;
+                height: 36px;
+            }
+            @include max-mq(1024px) {
+                width: 32px;
+                height: 32px;
+            }
+            @include max-mq($sm) {
+                width: 28px;
+                height: 28px;
+                right: 4px;
+            }
         }
     }
 }
@@ -53,15 +114,26 @@
     font-weight: 300;
     line-height: 26px;
     margin: 26px 2px 0 auto;
+    @include max-mq($md) {
+        margin: 0 auto 30px;
+        max-width: 600px;
+        text-align: center;
+    }
 }
 
 .home-hero-image-wrapper {
     position: relative;
     margin-top: 78px;
+    @include max-mq($md) {
+        margin-top: 40px;
+    }
 }
 
 .home-hero-image {
     border-radius: 18px;
+    @include max-mq($sm) {
+        border-radius: 10px;
+    }
 }
 
 .home-hero-image-placeholder {
@@ -76,6 +148,39 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    @include max-mq($ls) {
+        width: 120px;
+        height: 120px;
+        top: -65px;
+        img {
+            width: 100px;
+        }
+    }
+    @include max-mq(1024px) {
+        width: 100px;
+        height: 100px;
+        top: -55px;
+        img {
+            width: 80px;
+        }
+    }
+    @include max-mq($md) {
+        width: 80px;
+        height: 80px;
+        top: -45px;
+        img {
+            width: 60px;
+        }
+    }
+    @include max-mq($sm) {
+        width: 50px;
+        height: 50px;
+        top: -25px;
+        right: 20px;
+        img {
+            width: 40px;
+        }
+    }
 }
 
 .home-hero-ctas-wrapper {
@@ -93,10 +198,32 @@
     background-color: $primary-color;
     align-items: center;
     padding-bottom: 8px;
+    @include max-mq($ls) {
+        width: auto;
+        height: auto;
+        padding: 10px;
+        white-space: nowrap;
+        bottom: -40px;
+    }
+    @include max-mq($md) {
+        position: static;
+        transform: none;
+        flex-direction: column;
+        width: max-content;
+        margin: 30px auto 0;
+    }
     .btn {
         margin-right: 18px;
+        @include max-mq($md) {
+            margin-right: 0;
+            margin-bottom: 15px;
+            width: 100%;
+        }
         &:last-of-type {
             margin-right: 0;
+            @include max-mq($md) {
+                margin-bottom: 0;
+            }
         }
     }
 }

@@ -1,0 +1,232 @@
+.testimonials {
+    padding: 130px 0 120px;
+    position: relative;
+    @include max-mq($ls) {
+        padding: 40px 0 80px;
+    }
+}
+
+.testimonials-inner {
+    position: relative;
+    z-index: 2;
+}
+
+.testimonials-bg {
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 945px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    background-color: $primary-color;
+    span {
+        width: 1px;
+        height: 100%;
+        background-color: rgba($white, 0.2);
+        mix-blend-mode: soft-light;
+        display: block;
+    }
+}
+
+.testimonials-title {
+    font-family: $secondary-font;
+    font-size: 58px;
+    line-height: 70px;
+    font-weight: 600;
+    margin: 0 0 73px;
+    letter-spacing: 1.4px;
+    text-align: center;
+    @include max-mq($ls) {
+        font-size: 48px;
+        margin-bottom: 40px;
+    }
+    @include max-mq(1024px) {
+        font-size: 40px;
+        line-height: 50px;
+    }
+    @include max-mq($sm) {
+        font-size: 32px;
+        line-height: 42px;
+    }
+    p {
+        margin: 0;
+    }
+    strong {
+        color: $secondary-color;
+        letter-spacing: 1.8px;
+        font-weight: 500;
+    }
+}
+
+.testimonial-top-item {
+    text-align: center;
+}
+
+.testimonial-top-item-text {
+    color: $white;
+    font-family: $secondary-font;
+    width: 100%;
+    max-width: 880px;
+    margin: 0 auto 45px;
+    font-size: 24px;
+    line-height: 34px;
+    @include max-mq($ls) {
+        font-size: 20px;
+        line-height: 30px;
+        margin-bottom: 25px;
+    }
+    @include max-mq(1024px) {
+        font-size: 18px;
+        line-height: 24px;
+    }
+    @include max-mq($sm) {
+        font-size: 14px;
+    }
+}
+
+.testimonial-top-item-author {
+    color: $secondary-color;
+    font-family: $secondary-font;
+    font-size: 23px;
+    margin: 0 0 10px;
+    @include max-mq($ls) {
+        font-size: 18px;
+    }
+    @include max-mq(1024px) {
+        font-size: 16px;
+    }
+    @include max-mq($sm) {
+        font-size: 16px;
+    }
+}
+
+.testimonial-top-item-author-role {
+    font-size: $font-size-base;
+    line-height: 26px;
+    font-style: italic;
+    font-weight: 300;
+    @include max-mq($ls) {
+        font-size: 14px;
+    }
+    @include max-mq($sm) {
+        font-size: 12px;
+    }
+}
+
+.js-testimonials-slider-top {
+    margin-bottom: 55px;
+    @include max-mq($ls) {
+        margin-bottom: 30px;
+    }
+}
+
+.js-testimonials-slider-top, .js-testimonials-slider-bottom {
+    .slick-track {
+        display: flex;
+    }
+}
+
+.js-testimonials-slider-bottom {
+    position: relative;
+    .slick-list {
+        width: 100%;
+        max-width: 730px;
+        margin: 0 auto;
+        @include max-mq($ls) {
+            max-width: 600px;
+        }
+        @include max-mq($ls) {
+            max-width: 300px;
+        }
+    }
+
+    .slick-arrow {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        color: $secondary-color;
+        width: 58px;
+        height: 58px;
+        border: 1px solid $secondary-color;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        font-size: 22px;
+        transition: 0.4s ease;
+        @include max-mq($md) {
+            width: 40px;
+            height: 40px;
+            font-size: 16px;
+        }
+        @include max-mq($mb) {
+            display: none !important;
+        }
+        &:hover {
+            background-color: $secondary-color;
+            color: $white;
+        }
+
+        &.slick-prev {
+            left: 0;
+        }
+
+        &.slick-next {
+            right: 0;
+        }
+    }
+}
+
+
+.testimonial-bottom-item {
+    width: 116px;
+    height: 116px;
+    margin: 0 18px;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    @include max-mq($ls) {
+        width: 90px;
+        height: 90px;
+    }
+    @include max-mq($sm) {
+        width: 70px;
+        height: 70px;
+    }
+    &.slick-current {
+        .testimonial-bottom-item-inner {
+            width: 100%;
+            height: 100%;
+            border-color: $secondary-color;
+        }
+    }
+}
+
+.testimonial-bottom-item-inner {
+    width: 90px;
+    height: 90px;
+    border: 8px solid transparent;
+    border-radius: 50%;
+    overflow: hidden;
+    transition: 0.4s ease;
+    @include max-mq($ls) {
+        border-width: 4px;
+        width: 70px;
+        height: 70px;
+    }
+    @include max-mq($sm) {
+        border-width: 2px;
+        width: 50px;
+        height: 50px;
+    }
+    img {
+        object-fit: cover;
+    }
+}

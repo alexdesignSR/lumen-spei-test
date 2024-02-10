@@ -13,7 +13,7 @@
                     </a>
 
                     <?php if($i != $count) : ?>
-                        <img src="<?php echo get_template_directory_uri() . '/assets/images/partner-delimiter.png'; ?>" alt="" class="partner-delimiter">
+                        <img src="<?php echo get_template_directory_uri() . '/assets/images/partner-delimiter.png'; ?>" alt="delimiter image" class="partner-delimiter">
                     <?php endif; ?>
             
                 <?php $i++; endwhile; ?>

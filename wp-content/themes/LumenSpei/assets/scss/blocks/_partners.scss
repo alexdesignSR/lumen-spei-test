@@ -29,4 +29,44 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    @include max-mq($lg) {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    @include max-mq($md) {
+        height: auto;
+        padding: 20px 0;
+    }
+}
+
+.partner-item {
+    @include max-mq($lg) {
+        flex: 0 0 20%;
+        max-width: 20%;
+        text-align: center;
+        padding: 10px;
+    }
+    @include max-mq($md) {
+        flex: 0 0 33.333333%;
+        max-width: 33.333333%;
+        text-align: center;
+    }
+    @include max-mq($sm) {
+        flex: 0 0 100%;
+        max-width: 100%;
+        text-align: center;
+    }
+}
+
+.partner-logo {
+    transition: 0.4s ease;
+    &:hover {
+        filter: grayscale(0.5);
+    }
+}
+
+.partner-delimiter {
+    @include max-mq($lg) {
+        display: none;
+    }
 }

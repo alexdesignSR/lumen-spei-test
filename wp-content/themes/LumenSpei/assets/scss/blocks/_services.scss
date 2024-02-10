@@ -1,6 +1,9 @@
 .services {
     background-color: $white;
     padding: 104px 0 95px;
+    @include max-mq($ls) {
+        padding: 40px 0;
+    }
 }
 
 .services-title {
@@ -9,6 +12,17 @@
     color: $primary-color;
     margin: 0 0 44px;
     font-size: 58px;
+    @include max-mq($ls) {
+        font-size: 48px;
+    }
+    @include max-mq(1024px) {
+        font-size: 40px;
+        line-height: 50px;
+    }
+    @include max-mq($sm) {
+        font-size: 32px;
+        line-height: 42px;
+    }
 }
 
 .services-item-number {
@@ -19,6 +33,10 @@
     padding-left: 2px;
     transform: translateY(12px);
     width: 34px;
+    @include max-mq($sm) {
+        width: 30px;
+        font-size: 18px;
+    }
 }
 
 .services-item {
@@ -26,6 +44,9 @@
     position: relative;
     border-bottom: 1px solid rgba($primary-color, 0.2);
     padding: 27px 0 39px;
+    @include max-mq($sm) {
+        padding: 15px 0;
+    }
     &:hover {
         .services-item-title {
             color: $secondary-color;
@@ -44,11 +65,24 @@
             opacity: 1;
             visibility: visible;
         }
+
+        .service-item-read-more-mobile {
+            span {
+                transform: translate(5px, 1px);
+            }
+        }
     }
 }
 
 .services-item-heading {
     margin-left: 54px;
+    @include max-mq($sm) {
+        margin-left: 40px;
+    }
+    @include max-mq($sm) {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
 }
 
 .services-item-title {
@@ -61,6 +95,19 @@
     white-space: nowrap;
     position: relative;
     transition: 0.4s ease;
+    @include max-mq($ls) {
+        font-size: 32px;
+        line-height: 42px;
+    }
+    @include max-mq(1024px) {
+        font-size: 28px;
+        line-height: 38px;
+    }
+    @include max-mq($sm) {
+        font-size: 22px;
+        line-height: 30px;
+        white-space: initial;
+    }
     &::before {
         position: absolute;
         content: '';
@@ -72,11 +119,18 @@
         opacity: 0;
         visibility: hidden;
         transition: 0.4s ease;
+        @include max-mq($sm) {
+            display: none;
+        }
     }
 }
 
 .services-item-description {
     color: rgba($primary-color, 0.5);
+    @include max-mq($sm) {
+        width: 100%;
+        display: block;
+    }
 }
 
 .services-item-img {
@@ -90,6 +144,9 @@
     visibility: hidden;
     pointer-events: none;
     transition: 0.4s ease;
+    @include max-mq($ls) {
+        display: none;
+    }
 }
 
 .services-item-icon {
@@ -99,11 +156,36 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 25px;
+    font-size: 23px;
     border: 1px solid $secondary-color;
     border-radius: 50%;
     line-height: 1;
     margin-left: auto;
     transform: translateY(20px);
     transition: 0.4s ease;
+    @include max-mq($md) {
+        width: 40px;
+        height: 40px;
+        font-size: 16px;
+    }
+    @include max-mq($sm) {
+        display: none;
+    }
+}
+
+.service-item-read-more-mobile {
+    display: none;
+    @include max-mq($sm) {
+        display: inline-flex;
+        align-items: center;
+        color: $secondary-color;
+        font-size: $font-size-small;
+        margin-top: 10px;
+        span {
+            font-size: 10px;
+            margin-left: 5px;
+            transform: translate(0, 1px);
+            transition: 0.4s ease;
+        }
+    }
 }

@@ -1,4 +1,4 @@
-<section class="services">
+<section id="services" class="services">
     <div class="container">
         <div class="services-inner">
             <?php if ( $title = get_field('title') ) : ?>
@@ -28,6 +28,7 @@
                                 <?php if ( $additional_description = get_field('additional_description', get_the_ID()) ) : ?>
                                     <span class="services-item-description"><?php echo $additional_description; ?></span>
                                 <?php endif; ?>
+                                <span class="service-item-read-more-mobile"><?php _e('Read More'); ?><span class="icon-arrow-right"></span></span>
                             </div>
                             <?php if ( $small_image = get_field('small_image', get_the_ID()) ) : ?>
                                 <img src="<?php echo $small_image['url']; ?>" alt="services image" class="services-item-img">

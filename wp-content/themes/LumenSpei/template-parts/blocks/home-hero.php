@@ -2,7 +2,7 @@
     $cta_1 = get_field('cta_1');
     $cta_2 = get_field('cta_2');
 ?>
-<section class="home-hero">
+<section id="about" class="home-hero">
     <div class="container">
         <div class="home-hero-inner">
             <?php if ( $title = get_field('title') ) : ?>

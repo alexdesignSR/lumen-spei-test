@@ -6,3 +6,4 @@ include_once 'services.php';
 include_once 'portfolio.php';
 include_once 'partners.php';
 include_once 'testimonials.php';
+include_once 'cta.php';

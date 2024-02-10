@@ -1,0 +1,205 @@
+.site-footer {
+    padding: 70px 0 0;
+}
+
+.site-footer-inner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.site-footer-column {
+    @include max-mq($md) {
+        width: 100%;
+        max-width: 100%;
+        text-align: center;
+        padding: 30px 0;
+        border-top: 1px solid rgba($white, 0.2);
+    }
+}
+
+.site-footer-column-text {
+    line-height: 26px;
+    p {
+        margin: 0 0 8px;
+    }
+    strong {
+        color: $secondary-color;
+        font-size: 15px;
+        font-weight: 600;
+    }
+}
+
+.site-footer-column-1 {
+    max-width: 427px;
+    @include max-mq($lg) {
+        max-width: 33.333333%;
+    }
+    @include max-mq($md) {
+        max-width: 100%;
+    }
+}
+
+.site-footer-address {
+    margin: 0;
+    margin-top: 12px;
+    padding-top: 20px;
+    position: relative;
+    &::before {
+        position: absolute;
+        content: '';
+        width: 100%;
+        max-width: 370px;
+        height: 1px;
+        background-color: rgba($white, 0.2);
+        mix-blend-mode: soft-light;
+        top: 0;
+        left: 0;
+        @include max-mq($md) {
+            left: 50%;
+            transform: translateX(-50%);
+            max-width: 320px;
+        }
+    }
+}
+
+.site-footer-logo-link {
+    margin-bottom: 81px;
+    display: inline-flex;
+    @include max-mq($md) {
+        max-width: 151px;
+        margin-bottom: 40px;
+    }
+}
+
+.site-footer-bottom {
+    flex: 0 0 100%;
+    max-width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    border-top: 1px solid rgba($white, 0.5);
+    @include max-mq($md) {
+        margin-top: 20px;
+    }
+    @include max-mq($sm) {
+        height: 50px;
+    }
+}
+
+.site-footer-copyright-text {
+    margin: 0;
+    text-align: center;
+    color: rgba($white, 0.6);
+    font-family: $tertiary-font;
+    font-weight: 300;
+    @include max-mq($sm) {
+        font-size: 14px;
+    }
+}
+
+.site-footer-title {
+    color: $secondary-color;
+    line-height: 30px;
+    font-size: $font-size-base;
+    margin: 17px 0 20px;
+    font-family: $tertiary-font;
+    @include max-mq($md) {
+        margin: 0 0 20px;
+    }
+}
+
+.site-footer-form {
+    display: flex;
+    flex-direction: column;
+    width: 382px;
+    @include max-mq($lg) {
+        width: 100%;
+    }
+    @include max-mq($md) {
+        width: 100%;
+        max-width: 382px;
+        margin: 0 auto;
+    }
+
+    input {
+        background-color: transparent;
+        border: none;
+        border-bottom: 1px solid $white;
+        padding: 15px 0;
+        margin-bottom: 26px;
+        &::placeholder {
+            color: rgba($white, 0.6);
+            font-family: $tertiary-font;
+            font-weight: 300;
+        }
+    }
+
+    button {
+        width: 100%;
+        max-width: 302px;
+        justify-content: space-between;
+        box-shadow: none;
+        outline: 0;
+        border: none;
+        cursor: pointer;
+        @include max-mq($md) {
+            max-width: initial;
+        }
+    }
+}
+
+.site-footer-soc {
+    margin-top: 43px;
+    display: flex;
+    align-items: center;
+    @include max-mq($md) {
+        justify-content: center;
+    }
+}
+
+.site-footer-soc-limiter {
+    margin: 0 5px;
+}
+
+.site-footer-soc-link {
+    transition: 0.4s ease;
+    font-family: $tertiary-font;
+    @include max-mq($mb) {
+        font-size: 14px;
+    }
+    &:hover {
+        color: $secondary-color;
+    }
+}
+
+.site-footer-column-2 {
+    transform: translateX(-21px);
+    .site-footer-title {
+        margin-bottom: 11px;
+        @include max-mq($md) {
+            margin-bottom: 20px;
+        }
+    }
+    @include max-mq($md) {
+        transform: none;
+    }
+}
+
+.footer-menu {
+    padding: 0;
+    margin: 0;
+    li {
+        list-style: none;
+        a {
+            font-family: $tertiary-font;
+            line-height: 30px;
+            transition: 0.4s ease;
+            &:hover {
+                color: $secondary-color;
+            }
+        }
+    }
+}

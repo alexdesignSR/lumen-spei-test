@@ -1,12 +1,28 @@
 .statistic-number {
     width: 100%;
     padding: 100px 0 87px;
+    @include max-mq($ls) {
+        padding: 40px 0;
+    }
 }
 
 .statistic-number-inner {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+}
+
+.statistic-box {
+    @include max-mq($md) {
+        flex: 0 0 50%;
+        max-width: 50%;
+        text-align: center;
+        margin: 15px 0;
+    }
+    @include max-mq(575px) {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
 }
 
 .statistic-box-number {
@@ -16,6 +32,15 @@
     font-family: $secondary-font;
     color: transparent;
     -webkit-text-stroke: 1px rgba($white, 0.5);
+    @include max-mq($ls) {
+        font-size: 50px;
+        line-height: 60px;
+        position: relative;
+    }
+    @include max-mq($sm) {
+        font-size: 40px;
+        line-height: 50px;
+    }
     &::after {
         content: '+';
         font-family: $secondary-font;
@@ -27,6 +52,20 @@
         margin-left: 7px;
         transform: translateY(-30px);
         opacity: 1;
+        @include max-mq($ls) {
+            font-size: 40px;
+            transform: translateY(-20px);
+        }
+        @include max-mq($md) {
+            font-size: 40px;
+            transform: none;
+            position: absolute;
+            left: 100%;
+            top: -10px;
+        }
+        @include max-mq($sm) {
+            font-size: 30px;
+        }
     }
 }
 

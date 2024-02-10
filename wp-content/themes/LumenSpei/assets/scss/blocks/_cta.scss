@@ -1,0 +1,116 @@
+.cta-block {
+    padding: 0 0 50px;
+    @include max-mq($ls) {
+        padding-bottom: 40px;
+    }
+}
+
+.cta-block-inner {
+    background-color: $secondary-color;
+    border-radius: 20px;
+    padding: 70px 100px;
+    position: relative;
+    @include max-mq($ls) {
+        padding: 50px;
+    }
+    @include max-mq($sm) {
+        padding: 20px;
+    }
+}
+
+.cta-block-image {
+    position: absolute;
+    right: 58px;
+    bottom: 50px;
+    @include max-mq($ls) {
+        right: 30px;
+        bottom: 30px;
+    }
+    @include max-mq($sm) {
+        right: 20px;
+        bottom: 20px;
+        max-width: 25px;
+    }
+    @include max-mq(575px) {
+        right: 10px;
+        bottom: 10px;
+        max-width: 20px;
+    }
+}
+
+.cta-block-top {
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 87px;
+    @include max-mq($md) {
+        flex-wrap: wrap;
+        margin-bottom: 50px;
+    }
+}
+
+.cta-block-title {
+    margin: 0;
+    color: $primary-color;
+    font-family: $secondary-font;
+    font-size: 58px;
+    line-height: 70px;
+    font-weight: 600;
+    letter-spacing: 1.4px;
+    @include max-mq($ls) {
+        font-size: 48px;
+        max-width: 70%;
+    }
+    @include max-mq(1024px) {
+        font-size: 40px;
+        line-height: 50px;
+    }
+    @include max-mq($md) {
+        max-width: 100%;
+    }
+    @include max-mq($sm) {
+        font-size: 32px;
+        line-height: 42px;
+    }
+    p {
+        margin: 0;
+    }
+
+    strong {
+        color: $white;
+        font-weight: 600;
+    }
+}
+
+.cta-block-text {
+    line-height: 26px;
+    max-width: 186px;
+    margin: 0;
+    margin-left: auto;
+    transform: translate(5px, 0);
+    @include max-mq($ls) {
+        transform: none;
+    }
+    @include max-mq($md) {
+        max-width: 70%;
+        margin-left: 0;
+        margin-top: 25px;
+    }
+    @include max-mq($sm) {
+        max-width: 100%;
+    }
+}
+
+.cta-block-btn {
+    @include max-mq($mb) {
+        text-align: center;
+        &:hover {
+            background-color: $primary-color;
+            border-color: $primary-color;
+        }
+    }
+    span {
+        @include max-mq($mb) {
+            display: none;
+        }
+    }
+}

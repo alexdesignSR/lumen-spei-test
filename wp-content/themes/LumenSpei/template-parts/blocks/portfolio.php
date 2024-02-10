@@ -1,4 +1,4 @@
-<section class="portfolio">
+<section id="portfolio" class="portfolio">
     <div class="container">
         <div class="portfolio-inner">
             <?php if ( $title = get_field('title') ) : ?>

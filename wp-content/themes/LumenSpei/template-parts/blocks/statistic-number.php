@@ -6,7 +6,7 @@
                 <?php while( have_rows('statistics') ) : the_row(); ?>
             
                     <div class="statistic-box">
-                        <span class="statistic-box-number js-statistic-number"><?php the_sub_field('number'); ?></span>
+                        <span class="statistic-box-number js-statistic-number" data-count="<?php the_sub_field('number'); ?>">0</span>
                         <p class="statistic-box-text"><?php the_sub_field('text'); ?></p>
                     </div>
             

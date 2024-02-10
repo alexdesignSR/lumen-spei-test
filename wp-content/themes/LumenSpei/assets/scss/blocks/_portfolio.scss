@@ -1,5 +1,11 @@
 .portfolio {
     padding: 128px 0 73px;
+    @include max-mq($ls) {
+        padding: 40px 0;
+    }
+    @include max-mq(650px) {
+        padding: 40px 0 80px;
+    }
 }
 
 .portfolio-title {
@@ -9,6 +15,17 @@
     font-weight: 600;
     margin: 0 0 73px;
     letter-spacing: 1.4px;
+    @include max-mq($ls) {
+        font-size: 48px;
+    }
+    @include max-mq(1024px) {
+        font-size: 40px;
+        line-height: 50px;
+    }
+    @include max-mq($sm) {
+        font-size: 32px;
+        line-height: 42px;
+    }
     p {
         margin: 0;
     }
@@ -31,6 +48,14 @@
     max-width: 33.333333%;
     padding: 0 10px;
     margin-bottom: 50px;
+    @include max-mq($md) {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+    @include max-mq(650px) {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
 }
 
 .portfolio-item-image-wrapper {
@@ -40,7 +65,6 @@
     overflow: hidden;
     height: 287px;
     width: 100%;
-    margin-bottom: 30px;
     &:hover {
         .portfolio-item-image {
             transform: scale(1.02);
@@ -72,6 +96,9 @@
     font-size: 24px;
     position: relative;
     transition: 0.4s ease;
+    @include max-mq($lg) {
+        font-size: 20px;
+    }
     &:hover {
         text-decoration: underline;
     }
@@ -105,6 +132,16 @@
     width: 33.333333%;
     padding: 0 10px;
     margin-bottom: 50px;
+    @include max-mq($md) {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+    @include max-mq(650px) {
+        flex: 0 0 100%;
+        max-width: 100%;
+        margin-bottom: 0;
+        height: 300px;
+    }
 }
 
 .portfolio-view-all-inner {
@@ -116,6 +153,15 @@
     height: 100%;
     border-radius: 10px;
     overflow: hidden;
+    &:hover {
+        .icon-plus {
+            opacity: 0;
+            visibility: hidden;
+        }
+        .portfolio-view-all-text {
+            transform: translateY(-30px);
+        }
+    }
     .icon-plus {
         width: 58px;
         height: 58px;
@@ -126,7 +172,25 @@
         color: $white;
         background-color: $secondary-color;
         margin-bottom: 15px;
-        font-size: 36px;
+        font-size: 32px;
+        transition: 0.4s ease;
+        @include max-mq($sm) {
+            font-size: 24px;
+        }
+    }
+}
+
+.portfolio-item-content {
+    height: calc(100% - 287px);
+    padding: 30px 0 60px;
+    position: relative;
+    .btn {
+        position: absolute;
+        justify-content: space-between;
+        width: 100%;
+        max-width: 302px;
+        left: 0;
+        bottom: 0;
     }
 }
 
@@ -136,5 +200,5 @@
     font-weight: 600;
     text-transform: uppercase;
     font-family: $secondary-font;
-    // letter-spacing: 1px;
+    transition: 0.4s ease;
 }
