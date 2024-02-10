@@ -5,8 +5,8 @@
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Poppins:wght@300;400;600&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Poppins:wght@300;400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Poppins:wght@300;400;600&family=Unbounded:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Poppins:wght@300;400;600&family=Unbounded:wght@400;600;700&display=swap");
 html {
   line-height: 1.15; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
@@ -310,118 +310,6 @@ template {
   display: none;
 }
 
-@font-face {
-  font-family: "Unbounded";
-  src: url("../assets/fonts/unbounded/Unbounded-Bold.woff2") format("woff2"), url("../assets/fonts/unbounded/Unbounded-Bold.woff") format("woff");
-  font-weight: bold;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Unbounded";
-  src: url("../assets/fonts/unbounded/Unbounded-Black.woff2") format("woff2"), url("../assets/fonts/unbounded/Unbounded-Black.woff") format("woff");
-  font-weight: 900;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Unbounded";
-  src: url("../assets/fonts/unbounded/Unbounded-ExtraBold.woff2") format("woff2"), url("../assets/fonts/unbounded/Unbounded-ExtraBold.woff") format("woff");
-  font-weight: bold;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Unbounded";
-  src: url("../assets/fonts/unbounded/Unbounded-Light.woff2") format("woff2"), url("../assets/fonts/unbounded/Unbounded-Light.woff") format("woff");
-  font-weight: 300;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Unbounded";
-  src: url("../assets/fonts/unbounded/Unbounded-SemiBold.woff2") format("woff2"), url("../assets/fonts/unbounded/Unbounded-SemiBold.woff") format("woff");
-  font-weight: 600;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Unbounded";
-  src: url("../assets/fonts/unbounded/Unbounded-Regular.woff2") format("woff2"), url("../assets/fonts/unbounded/Unbounded-Regular.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Unbounded";
-  src: url("../assets/fonts/unbounded/Unbounded-ExtraLight.woff2") format("woff2"), url("../assets/fonts/unbounded/Unbounded-ExtraLight.woff") format("woff");
-  font-weight: 200;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Unbounded";
-  src: url("../assets/fonts/unbounded/Unbounded-Medium.woff2") format("woff2"), url("../assets/fonts/unbounded/Unbounded-Medium.woff") format("woff");
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Unbounded";
-  src: url("../assets/fonts/unbounded/Unbounded-Bold.woff2") format("woff2"), url("../assets/fonts/unbounded/Unbounded-Bold.woff") format("woff");
-  font-weight: bold;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Unbounded";
-  src: url("../assets/fonts/unbounded/Unbounded-Black.woff2") format("woff2"), url("../assets/fonts/unbounded/Unbounded-Black.woff") format("woff");
-  font-weight: 900;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Unbounded";
-  src: url("../assets/fonts/unbounded/Unbounded-ExtraBold.woff2") format("woff2"), url("../assets/fonts/unbounded/Unbounded-ExtraBold.woff") format("woff");
-  font-weight: bold;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Unbounded";
-  src: url("../assets/fonts/unbounded/Unbounded-Light.woff2") format("woff2"), url("../assets/fonts/unbounded/Unbounded-Light.woff") format("woff");
-  font-weight: 300;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Unbounded";
-  src: url("../assets/fonts/unbounded/Unbounded-SemiBold.woff2") format("woff2"), url("../assets/fonts/unbounded/Unbounded-SemiBold.woff") format("woff");
-  font-weight: 600;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Unbounded";
-  src: url("../assets/fonts/unbounded/Unbounded-Regular.woff2") format("woff2"), url("../assets/fonts/unbounded/Unbounded-Regular.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Unbounded";
-  src: url("../assets/fonts/unbounded/Unbounded-ExtraLight.woff2") format("woff2"), url("../assets/fonts/unbounded/Unbounded-ExtraLight.woff") format("woff");
-  font-weight: 200;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Unbounded";
-  src: url("../assets/fonts/unbounded/Unbounded-Medium.woff2") format("woff2"), url("../assets/fonts/unbounded/Unbounded-Medium.woff") format("woff");
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
-}
 * {
   box-sizing: border-box;
 }
@@ -765,11 +653,15 @@ img {
   border-bottom: 1px solid #ffffff;
   padding: 15px 0;
   margin-bottom: 26px;
+  color: rgba(255, 255, 255, 0.6);
 }
 .site-footer-form input::placeholder {
   color: rgba(255, 255, 255, 0.6);
   font-family: "Inter", sans-serif;
   font-weight: 300;
+}
+.site-footer-form input:focus-visible {
+  outline: 0;
 }
 .site-footer-form button {
   width: 100%;
@@ -882,7 +774,7 @@ img {
   padding: 0 36px;
   height: 58px;
   border-radius: 50px;
-  font-family: "Unbounded";
+  font-family: "Unbounded", sans-serif;
   font-weight: 500;
   letter-spacing: 0.24px;
   font-size: 16px;
@@ -1029,7 +921,7 @@ img {
 }
 
 .home-hero-title {
-  font-family: "Unbounded";
+  font-family: "Unbounded", sans-serif;
   color: #ffffff;
   font-size: 80px;
   line-height: 90px;
@@ -1318,7 +1210,7 @@ img {
   font-size: 64px;
   line-height: 74px;
   font-weight: 600;
-  font-family: "Unbounded";
+  font-family: "Unbounded", sans-serif;
   color: transparent;
   -webkit-text-stroke: 1px rgba(255, 255, 255, 0.5);
 }
@@ -1337,7 +1229,7 @@ img {
 }
 .statistic-box-number::after {
   content: "+";
-  font-family: "Unbounded";
+  font-family: "Unbounded", sans-serif;
   font-weight: 600;
   color: #FF6931;
   -webkit-text-stroke: 0;
@@ -1385,7 +1277,7 @@ img {
 
 .services-title {
   text-align: center;
-  font-family: "Unbounded";
+  font-family: "Unbounded", sans-serif;
   color: #222222;
   margin: 0 0 44px;
   font-size: 58px;
@@ -1410,7 +1302,7 @@ img {
 
 .services-item-number {
   color: #FF6931;
-  font-family: "Unbounded";
+  font-family: "Unbounded", sans-serif;
   font-weight: 600;
   font-size: 24px;
   padding-left: 2px;
@@ -1471,7 +1363,7 @@ img {
 
 .services-item-title {
   color: rgba(34, 34, 34, 0.5);
-  font-family: "Unbounded";
+  font-family: "Unbounded", sans-serif;
   margin: 0 0 15px;
   font-size: 40px;
   line-height: 50px;
@@ -1607,7 +1499,7 @@ img {
 }
 
 .portfolio-title {
-  font-family: "Unbounded";
+  font-family: "Unbounded", sans-serif;
   font-size: 58px;
   line-height: 70px;
   font-weight: 600;
@@ -1696,7 +1588,7 @@ img {
 
 .portfolio-item-title {
   color: #FF6931;
-  font-family: "Unbounded";
+  font-family: "Unbounded", sans-serif;
   font-weight: 600;
   margin: 0;
   font-size: 24px;
@@ -1811,7 +1703,7 @@ img {
   line-height: 34px;
   font-weight: 600;
   text-transform: uppercase;
-  font-family: "Unbounded";
+  font-family: "Unbounded", sans-serif;
   transition: 0.4s ease;
 }
 
@@ -1934,7 +1826,7 @@ img {
 }
 
 .testimonials-title {
-  font-family: "Unbounded";
+  font-family: "Unbounded", sans-serif;
   font-size: 58px;
   line-height: 70px;
   font-weight: 600;
@@ -1975,7 +1867,7 @@ img {
 
 .testimonial-top-item-text {
   color: #ffffff;
-  font-family: "Unbounded";
+  font-family: "Unbounded", sans-serif;
   width: 100%;
   max-width: 880px;
   margin: 0 auto 45px;
@@ -2003,7 +1895,7 @@ img {
 
 .testimonial-top-item-author {
   color: #FF6931;
-  font-family: "Unbounded";
+  font-family: "Unbounded", sans-serif;
   font-size: 23px;
   margin: 0 0 10px;
 }
@@ -2230,7 +2122,7 @@ img {
 .cta-block-title {
   margin: 0;
   color: #222222;
-  font-family: "Unbounded";
+  font-family: "Unbounded", sans-serif;
   font-size: 58px;
   line-height: 70px;
   font-weight: 600;

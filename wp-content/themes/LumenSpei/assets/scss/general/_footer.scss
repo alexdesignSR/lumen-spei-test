@@ -130,10 +130,14 @@
         border-bottom: 1px solid $white;
         padding: 15px 0;
         margin-bottom: 26px;
+        color: rgba($white, 0.6);
         &::placeholder {
             color: rgba($white, 0.6);
             font-family: $tertiary-font;
             font-weight: 300;
+        }
+        &:focus-visible {
+            outline: 0;
         }
     }
 
